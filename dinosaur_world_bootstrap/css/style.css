@@ -1,0 +1,22 @@
+/* Only theme colors and fixed sizes. All spacing uses Bootstrap utilities. */
+.hero-dino { width: 280px; height: 280px; font-size: 9rem; background: #d9e5c6; }
+.tile { height: 190px; font-size: 4.5rem; }
+.tile.slide { height: 340px; font-size: 9rem; }
+.tile.thumb { height: 140px; font-size: 3.5rem; }
+.t1 { background: #e2c5a1; } .t2 { background: #c6d8ad; } .t3 { background: #d9c5b5; }
+.t4 { background: #b9d8d0; } .t5 { background: #d9e5c6; } .t6 { background: #f0d9a1; }
+.t7 { background: #cbb9d8; } .t8 { background: #b9c9d8; } .t9 { background: #d8c9b9; }
+.carousel-caption { bottom: 2.5rem; }
+@media (max-width: 575.98px) { .hero-dino { width: 200px; height: 200px; font-size: 6rem; } .tile.slide { height: 240px; font-size: 6rem; } }
+
+/* Assignment 4 interactive features */
+body { transition: background-color .35s ease; }
+.faq-answer {max-height:0;overflow:hidden;opacity:0;transition:max-height .35s ease,opacity .35s ease;}
+.faq-answer.faq-open {max-height:240px;opacity:1;}
+.faq-question {width:100%;text-align:left;border:0;background:#e8f5e9;padding:16px;font-weight:700;border-radius:8px;}
+.faq-item {margin-bottom:12px;}
+.faq-answer p {padding:12px 16px;margin:0;}
+.popup-overlay[hidden] {display:none;}
+.popup-overlay {position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:2000;display:flex;align-items:center;justify-content:center;padding:20px;}
+.popup-box {background:white;border-radius:14px;padding:26px;width:min(100%,440px);box-shadow:0 16px 40px #0003;}
+.modal-active {overflow:hidden;}
